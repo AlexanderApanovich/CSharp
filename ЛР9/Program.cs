@@ -4,34 +4,51 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Lab10
+namespace Lab9Part2
 {
+    struct MeanOfCommunication : IComparable
+    {
+        public string type;
+        public double range;
+        public double priceperminute;
+
+        public MeanOfCommunication(string type,double range,double priceperminute)
+        {
+            this.type = type;
+            this.range = range;
+            this.priceperminute = priceperminute;
+        }
+        public int CompareTo(object obj) //CompareTo для радиуса действия
+        {
+            MeanOfCommunication temp = (MeanOfCommunication)obj;
+            return range.CompareTo(temp.range);
+        }
+        public void InputMean()
+        {
+            Console.WriteLine("Введите тип");
+            type = Console.ReadLine();
+            Console.WriteLine("Введите радиус действия");
+            range = Convert.ToDouble(Console.ReadLine());
+            Console.WriteLine("Введите цену за минуту");
+            priceperminute = Convert.ToDouble(Console.ReadLine());
+        }
+        public void OutputMean()
+        {
+            Console.WriteLine("Тип:{0} ; Радиус действия:{1} ; Цена за минуту: {2} ;", type, range, priceperminute);
+        }
+    }
+
     class Program
     {
         static void Main(string[] args)
         {
-            Theater th1 = new Theater("Театр", 12551, 4, "Сцена");
-            Console.WriteLine(th1);
-            th1.CloseTheDoor();
-            th1.OpenTheDoor();
-            Theater[] arrtheater = new Theater[5];
-            try
-            {
-                for (int i = 0; i < 17; i++)
-                {
-                    arrtheater[i] = new Theater();
-                    Console.WriteLine(arrtheater[i]);
-                }
-            }
-            catch(IndexOutOfRangeException ex) //Сначала вылавливаем более узкую ошибку(в данном случае выход за пределы массива)
-            {
-                Console.WriteLine("Ошибка: " + ex.Message);
-            }
-            catch(Exception ex) //Вылавливаем любое исключение
-            {
-                Console.WriteLine("Ошибка: " + ex.Message);
-            }
-            Console.Read();
+            MeansOfCommunication k = new MeansOfCommunication(3);
+            k.OutputMeans();
+            k.MaxRange();
+            double avprice = k.AveragePricePerHour("телефон");
+            Console.WriteLine(avprice);
+
+            Console.ReadKey();
         }
     }
 }
