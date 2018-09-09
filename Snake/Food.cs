@@ -28,9 +28,7 @@ namespace Snake
         public void Render()
         {
             Console.SetCursorPosition(X, Y);
-            Console.Write("f");
+            Console.Write("*");
         }
-
-
     }
 }

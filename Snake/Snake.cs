@@ -4,7 +4,7 @@ namespace Snake
 {
     class Snake : Queue
     {
-        public Point SnakeHead = new Point(0, 0);
+        public Point SnakeHead = new Point(1, 1);
         public string Moving { get; set; } = "down";
                 
         public Snake() : base() { }
@@ -14,10 +14,10 @@ namespace Snake
             for (int i = 0; i < Length; i++) 
             {
                 Console.SetCursorPosition(queue[i].X, queue[i].Y);
-                Console.Write("S");
+                Console.Write("■");
             }
             Console.SetCursorPosition(SnakeHead.X,SnakeHead.Y);
-            Console.Write("S");
+            Console.Write("■");
         }
 
         public void SnakeHeadMove(ConsoleKey pressedKey)
