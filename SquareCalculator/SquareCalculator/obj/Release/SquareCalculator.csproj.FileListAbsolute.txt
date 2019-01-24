@@ -1,0 +1,10 @@
+C:\Users\User\source\repos\SquareCalculator\SquareCalculator\bin\Release\SquareCalculator.exe.config
+C:\Users\User\source\repos\SquareCalculator\SquareCalculator\bin\Release\SquareCalculator.exe
+C:\Users\User\source\repos\SquareCalculator\SquareCalculator\bin\Release\SquareCalculator.pdb
+C:\Users\User\source\repos\SquareCalculator\SquareCalculator\obj\Release\SquareCalculator.Form1.resources
+C:\Users\User\source\repos\SquareCalculator\SquareCalculator\obj\Release\SquareCalculator.Form2.resources
+C:\Users\User\source\repos\SquareCalculator\SquareCalculator\obj\Release\SquareCalculator.Properties.Resources.resources
+C:\Users\User\source\repos\SquareCalculator\SquareCalculator\obj\Release\SquareCalculator.csproj.GenerateResource.cache
+C:\Users\User\source\repos\SquareCalculator\SquareCalculator\obj\Release\SquareCalculator.csproj.CoreCompileInputs.cache
+C:\Users\User\source\repos\SquareCalculator\SquareCalculator\obj\Release\SquareCalculator.exe
+C:\Users\User\source\repos\SquareCalculator\SquareCalculator\obj\Release\SquareCalculator.pdb
